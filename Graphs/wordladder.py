@@ -26,14 +26,19 @@ class Graph:
             self.wordlist.insert(i,ele)
 
     def wordladder(self,beg):
-        count = 0
+        count = 1
         self.wordHelper(beg,count,"")
         return self.listwords,self.path
 
 wordl = ["hot","dot","dog","lot","log","cog"]
+wordl = ["hot","dot","dog","lot","log"]
 beg = "hit"
 end = "cog"
 
 g = Graph(wordl,end)
 countlist, words = g.wordladder(beg)
-print(min(countlist))
+print(words)
+if(countlist):
+    print(min(countlist))
+else:
+    print(0)
