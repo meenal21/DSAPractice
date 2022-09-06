@@ -1,5 +1,5 @@
 class Solution:
-    def totalFruit(self, fruits: List[int]) -> int:
+    def totalFruit(self, fruits) -> int:
         # move ahead 
         # starting from any tree
         dic = dict()
